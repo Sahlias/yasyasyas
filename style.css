@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Star Jedi';
+    src: url('fonts/Starjedi.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 1rem;
+    border-bottom: 2px solid #ffa500;
+}
+
+.navbar .logo {
+    font-size: 2rem;
+    font-family: 'Star Jedi', sans-serif;
+    color: #ffa500;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar .menu a {
+    color: #ffa500;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar .menu a:hover {
+    color: #fff;
+}
+
+.content {
+    padding: 2rem;
+}
+
+.content h1 {
+    font-family: 'Star Jedi', sans-serif;
+    font-size: 3rem;
+    color: #ffa500;
+    margin: 2rem 0;
+}
+
+.content p {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .menu {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+
+    .navbar .menu a {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+        border-top: 1px solid #ffa500;
+    }
+}
